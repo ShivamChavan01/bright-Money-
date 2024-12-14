@@ -31,24 +31,7 @@ let cloneItems = () => {
     });
 };
 
-const startCarousel = () => {
-    let scrollAmount = 0;
-    const slideSpeed = 7; // Adjust speed here
 
-    const animate = () => {
-        scrollAmount += slideSpeed;
-        if (scrollAmount >= carousel.scrollWidth / 3) {
-            scrollAmount = 0;
-        }
-        carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        requestAnimationFrame(animate);
-    };
-
-    animate();
-};
-
-cloneItems();
-startCarousel();
 
 
 

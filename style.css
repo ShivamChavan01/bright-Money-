@@ -58,7 +58,7 @@ nav {
     margin: auto;
     width: 95%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     z-index: 1000;
     padding: 0px 30px;
@@ -181,12 +181,13 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: -20px;
     margin-top: 20px;
     padding: 10px 90px;
     background-color: #141515;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 17px;
     cursor: pointer;
 }
@@ -547,9 +548,9 @@ nav {
 }
 .carousel {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     padding: 50px;
 }
 .carousel img {
@@ -562,13 +563,21 @@ nav {
 
 
 @media (max-width: 768px) {
+    
     .carousel img {
-        max-height: 40px;
+        max-height: 17px;
     }
 }
 @media (max-width: 480px) {
+
+    .carousel {
+        
+        gap: 10px;
+        padding: 10px;
+    }
+
     .carousel img {
-        max-height: 30px;
+        max-height: 11px;
     }
 }
 
@@ -611,11 +620,6 @@ nav {
     }
 
 }
-
-
-
-
-
 
 .download-section .container {
     display: flex;
