@@ -1,3 +1,26 @@
+const draggable = document.getElementById('draggable');
+
+let offsetX, offsetY, isDragging = false;
+
+draggable.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  offsetX = e.clientX - draggable.getBoundingClientRect().left;
+  offsetY = e.clientY - draggable.getBoundingClientRect().top;
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    draggable.style.left = `${e.clientX - offsetX}px`;
+    draggable.style.top = `${e.clientY - offsetY}px`;
+  }
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+
+
 
 const carousel = document.getElementById('carousel');
 let cloneItems = () => {

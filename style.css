@@ -23,6 +23,24 @@
 }
 
 
+.draggable {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 480px) {
+
+.draggable{
+    display: none;
+}
+  }
+
 
     .page {
         background: linear-gradient(330deg, rgba(254, 239, 199, 1) 10%, rgba(227, 241, 231, 0.96) 43%);
