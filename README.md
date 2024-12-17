@@ -10,7 +10,7 @@ The goal of this project is to develop a scalable and responsive frontend layout
 
 - Fit logos/images perfectly **in a single straight line** across all devices (desktop, tablet, and mobile).
 - Ensure **no horizontal scrolling** or unwanted spacing.
-- Implement a clean, professional design optimized for performance and responsiveness.
+
 
 ---
 
@@ -20,7 +20,7 @@ The goal of this project is to develop a scalable and responsive frontend layout
 - 📱 **Cross-Device Compatibility**: Works seamlessly on desktop, tablet, and mobile.
 - ⚡ **Optimized Performance**: Lightweight and efficient code with minimal dependencies.
 - 🖼️ **Dynamic Image Scaling**: Images scale proportionally without distortion.
-- 💻 **Clean Code**: Well-structured, readable, and modular code using modern **HTML** and **CSS**.
+
 
 ---
 
