@@ -22,14 +22,7 @@ document.addEventListener('mouseup', () => {
 
 
 
-const carousel = document.getElementById('carousel');
-let cloneItems = () => {
-    const items = Array.from(carousel.children);
-    items.forEach(item => {
-        const clone = item.cloneNode(true);
-        carousel.appendChild(clone);
-    });
-};
+
 
 
 
@@ -41,11 +34,11 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
     breakpoints: {
         768: {
-            slidesPerView: 2, /* Two slides for tablets */
+            slidesPerView: 2, 
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 1, /* Swiper hidden in desktop via CSS */
+            slidesPerView: 1,
         }
     }
 });
